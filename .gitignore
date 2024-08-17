@@ -1,0 +1,13 @@
+# Ignorar el archivo .env
+.env
+
+# Ignorar archivos de caché de Python
+*.pyc
+__pycache__/
+
+# Ignorar la base de datos SQLite
+db.sqlite3
+
+# Ignorar directorios de archivos estáticos y media
+media/
+staticfiles/

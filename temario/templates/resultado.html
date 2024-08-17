@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temario Generado</title>
+</head>
+<body>
+    <h1>Temario Generado</h1>
+    <pre>{{ temario }}</pre>
+    <form method="post" action="{% url 'generar_pdf' %}">
+        {% csrf_token %}
+        <input type="hidden" name="temario" value="{{ temario }}">
+        <input type="submit" value="Descargar como PDF">
+    </form>
+    <a href="/">Volver</a>
+</body>
+</html>
